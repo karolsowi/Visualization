@@ -11,13 +11,13 @@ const LineChart = () => {
       },
       background: '',
       foreColor: '#333',
-      height: 525,
+      height: 1000,
       id: 'WzDd9',
       stackOnlyBar: true,
       toolbar: {
-        show: false
+        show: true
       },
-      width: 827
+      width: 1000
     },
     plotOptions: {
       line: {
@@ -70,15 +70,6 @@ const LineChart = () => {
           fontSize: '16px'
         }
       },
-      pie: {
-        donut: {
-          labels: {
-            name: {},
-            value: {},
-            total: {}
-          }
-        }
-      }
     },
     dataLabels: {
       enabled: false,
@@ -89,22 +80,22 @@ const LineChart = () => {
     },
     grid: {
       padding: {
-        right: 25,
-        left: 15
+        right: 5,
+        left: 5
       }
     },
     legend: {
-        floating: true,
-        position: 'right',
+        floating: false,
+        position: 'bottom',
         fontSize: 14,
         offsetX: -2,
-        offsetY: 12,
+        offsetY: 10,
         markers: {
           shape: 'square',
-          size: 8
+          size: 10
         },
         itemMargin: {
-          vertical: 0
+          vertical: 1
         }
       },
     markers: {
@@ -157,8 +148,8 @@ const LineChart = () => {
       }
     },
     yaxis: {
-      tickAmount: 7,
-      max: 210000,
+      tickAmount: 15,
+      max: 270000,
       min: 0,
       labels: {
         style: {
@@ -176,35 +167,130 @@ const LineChart = () => {
 
   const series = [
     {
-      name: 'Edukacja',
-      data: [
-        { x: '2018', y: '54928' },
-        { x: '2019', y: '49844' },
-        { x: '2020', y: '47629' },
-        { x: '2021', y: '44981' },
-        { x: '2022', y: '41433' }
-      ],
-      group: 'apexcharts-axis-0',
-      zIndex: 0
+        name: 'edukacja',
+        data: [
+            { x: '2018', y: '73893' },
+            { x: '2019', y: '67015' },
+            { x: '2020', y: '63650' },
+            { x: '2021', y: '60775' },
+            { x: '2022', y: '53114' }
+        ],
+        group: 'apexcharts-axis-0',
+        zIndex: 0
     },
     {
-      name: 'Indywidualne studia międzyobszarowe',
-      data: [
-        { x: '2018', y: '2027' },
-        { x: '2019', y: '21537' },
-        { x: '2020', y: '18867' },
-        { x: '2021', y: '15267' },
-        { x: '2022', y: '15126' }
-      ],
-      group: 'apexcharts-axis-0',
-      zIndex: 1
+        name: 'indywidualne studia międzyobszarowe',
+        data: [
+            { x: '2018', y: '2260' },
+            { x: '2019', y: '22219' },
+            { x: '2020', y: '22246' },
+            { x: '2021', y: '18544' },
+            { x: '2022', y: '17905' }
+        ],
+        group: 'apexcharts-axis-0',
+        zIndex: 1
     },
-    // ... (other series data as in the provided file)
-  ];
+    {
+        name: 'nauki przyrodnicze, matematyka i statystyka',
+        data: [
+            { x: '2018', y: '60497' },
+            { x: '2019', y: '56987' },
+            { x: '2020', y: '55302' },
+            { x: '2021', y: '53153' },
+            { x: '2022', y: '51443' }
+        ],
+        group: 'apexcharts-axis-0',
+        zIndex: 2
+    },
+    {
+        name: 'nauki społeczne, dziennikarstwo i informacja',
+        data: [
+            { x: '2018', y: '127634' },
+            { x: '2019', y: '118189' },
+            { x: '2020', y: '119719' },
+            { x: '2021', y: '116144' },
+            { x: '2022', y: '115475' }
+        ],
+        group: 'apexcharts-axis-0',
+        zIndex: 3
+    },
+    {
+        name: 'prowadzenie działalności gospodarczej, administracja i prawo',
+        data: [
+            { x: '2018', y: '203682' },
+            { x: '2019', y: '195498' },
+            { x: '2020', y: '187773' },
+            { x: '2021', y: '185077' },
+            { x: '2022', y: '179073' }
+        ],
+        group: 'apexcharts-axis-0',
+        zIndex: 4
+    },
+    {
+        name: 'rolnictwo, leśnictwo, rybołówstwo i weterynaria',
+        data: [
+            { x: '2018', y: '30001' },
+            { x: '2019', y: '27246' },
+            { x: '2020', y: '27475' },
+            { x: '2021', y: '26535' },
+            { x: '2022', y: '25645' }
+        ],
+        group: 'apexcharts-axis-0',
+        zIndex: 5
+    },
+    {
+        name: 'sztuka i przedmioty humanistyczne',
+        data: [
+            { x: '2018', y: '118610' },
+            { x: '2019', y: '112530' },
+            { x: '2020', y: '113409' },
+            { x: '2021', y: '111793' },
+            { x: '2022', y: '110255' }
+        ],
+        group: 'apexcharts-axis-0',
+        zIndex: 6
+    },
+    {
+        name: 'technika, przemysł i budownictwo',
+        data: [
+            { x: '2018', y: '263228' },
+            { x: '2019', y: '234990' },
+            { x: '2020', y: '218816' },
+            { x: '2021', y: '206807' },
+            { x: '2022', y: '196214' }
+        ],
+        group: 'apexcharts-axis-0',
+        zIndex: 7
+    },
+    {
+        name: 'technologie informacyjno-komunikacyjne',
+        data: [
+            { x: '2018', y: '64783' },
+            { x: '2019', y: '62448' },
+            { x: '2020', y: '62361' },
+            { x: '2021', y: '62558' },
+            { x: '2022', y: '62454' }
+        ],
+        group: 'apexcharts-axis-0',
+        zIndex: 8
+    },
+    {
+        name: 'usługi',
+        data: [
+            { x: '2018', y: '72393' },
+            { x: '2019', y: '67567' },
+            { x: '2020', y: '63558' },
+            { x: '2021', y: '59190' },
+            { x: '2022', y: '57534' }
+        ],
+        group: 'apexcharts-axis-0',
+        zIndex: 9
+    }
+];
 
   return (
     <div>
-      <Chart options={options} series={series} type="line" height={450} width={600} />
+      <Chart options={options} series={series} type="line" height={600} width={500} />
     </div>
   );
 };

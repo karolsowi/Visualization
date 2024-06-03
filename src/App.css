@@ -36,3 +36,40 @@
 .wrapper > * {
   flex: 1;
 }
+
+nav {
+  background-color: #3273ff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures it stays on top of other elements */
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-family: Helvetica, sans-serif;
+}
+
+nav .opis-button {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+nav .opis-button:hover {
+  background-color: #969696;
+}
+body {
+  padding-top: 8rem; /* Adjust this value as needed */
+}

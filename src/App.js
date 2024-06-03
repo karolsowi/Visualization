@@ -6,27 +6,39 @@ import { MixChart } from './components/MixChart';
 import { Alert, Container, Col, Row } from 'reactstrap';
 import LineChart from './components/LineChart';
 import CandlestickChart from './components/CandleChart';
-import Navbar from './components/Navbar';
+import MultiChart from './components/MultiChart';
+import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter} from 'react-router-dom';
+import Opis from './components/opis';
+
+function Home() {
+  return (
+    <div>
+      <nav>
+        <h1>Wizualizacja Danych</h1>
+        <Link to="/opis" className="opis-button">Opis</Link>
+      </nav>
+      <div className="chart-wide">
+        <MultiChart />
+        <br/>
+      </div>
+      <div className="wrapper">
+        <LineChart />
+        <BarChart />
+      </div>
+    </div>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
+    <BrowserRouter>
       <Container>
-        <div className="header">
-          <h1 className="display-4">Wizualizacja Danych</h1>
-          <button className="opis-button" onClick={() => { window.location.href = '/opis'; }}>Opis</button>
-        </div>
-        <div className="chart-wide">
-          <CandlestickChart />
-        </div>
-        <div className="wrapper">
-          <LineChart />
-          <BarChart />
-        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/opis" element={<Opis />} />
+        </Routes>
       </Container>
-    </div>
-    
+    </BrowserRouter>
   );
 }
 

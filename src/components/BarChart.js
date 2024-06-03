@@ -9,7 +9,6 @@ const BarChart = () => {
         enabled: false,
         easing: 'swing'
       },
-      background: '#fff',
       foreColor: '#373D3F',
       height: 436,
       id: 'SBq6T',
