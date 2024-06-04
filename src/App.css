@@ -70,6 +70,17 @@ nav .opis-button {
 nav .opis-button:hover {
   background-color: #969696;
 }
+
 body {
   padding-top: 8rem; /* Adjust this value as needed */
+}
+
+body h2 {
+  padding-top: 10px;
+  font-size: 30px;
+}
+
+body h3 {
+  padding-top: 10px;
+  font-size: 24px;
 }
