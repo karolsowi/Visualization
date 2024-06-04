@@ -95,7 +95,7 @@ const options = {
     }
   },
   title: {
-    text: 'Liczba Absolwentów z Podziałem na Kierunki Studiów w Latach 2018-2022',
+    text: '1. Liczba Absolwentów z Podziałem na Kierunki Studiów w Latach 2018-2022',
     floating: true,
     offsetY: 0,
     align: 'center',

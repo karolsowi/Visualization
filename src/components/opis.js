@@ -10,8 +10,11 @@ const Opis = () => {
         <Link to="/Visualisation" className="opis-button">Wykresy</Link>
       </nav>
       <div className="opis">
-        <p>W tym projekcie przedstawiamy liczbę absolwentów z podziałem na kierunki studiów w latach 2018-2022. Dane są wizualizowane za pomocą wykresów słupkowych, co pozwala na łatwe porównanie zmian w liczbie absolwentów w poszczególnych latach.</p>
-        <h2>Cel projektu</h2>
+        <h3>Opis projektu</h3>
+        <p>Jest to projekt stworzony w ramach zajęć Wizualizacja danych w Szkole Głównej Gospodarstwa Wiejskiego w Warszawie dla kierunku Informatyka.</p>
+        <p>Projekt przedstawia dane na temat liczby studentów oraz absolwentów różnych kierunków studiów na uczelniach wyższych w Polsce na przestrzeni lat 2018-2022.</p>
+        <p>Dane wykorzystane w projekcie zostały pobrane z Banku Danych Lokalnych prowadzonego przez Główny Urząd Statystyczny.</p>
+        <h3>Cel projektu</h3>
         <p>Celem projektu jest zbadanie trendów w edukacji i zrozumienie, które kierunki studiów zyskały na popularności, a które straciły.</p>
       </div>
     </div>
