@@ -7,7 +7,7 @@ const Opis = () => {
     <div>
       <nav>
         <h1>Wizualizacja Danych</h1>
-        <Link to="/" className="opis-button">Wykresy</Link>
+        <Link to="/Visualisation" className="opis-button">Wykresy</Link>
       </nav>
       <div className="opis">
         <p>W tym projekcie przedstawiamy liczbę absolwentów z podziałem na kierunki studiów w latach 2018-2022. Dane są wizualizowane za pomocą wykresów słupkowych, co pozwala na łatwe porównanie zmian w liczbie absolwentów w poszczególnych latach.</p>

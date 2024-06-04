@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
-import Chart from "react-apexcharts";
 import BarChart from './components/BarChart';
 import { MixChart } from './components/MixChart';
-import { Alert, Container, Col, Row } from 'reactstrap';
+import { Container } from 'reactstrap';
 import LineChart from './components/LineChart';
 import CandlestickChart from './components/CandleChart';
 import MultiChart from './components/MultiChart';
-import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter} from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import Opis from './components/opis';
 
 function Home() {
@@ -31,14 +30,12 @@ function Home() {
 
 function App() {
   return (
-    <BrowserRouter>
-      <Container>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/opis" element={<Opis />} />
-        </Routes>
-      </Container>
-    </BrowserRouter>
+    <Container>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/opis" element={<Opis />} />
+      </Routes>
+    </Container>
   );
 }
 
