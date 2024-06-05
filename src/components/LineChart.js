@@ -7,7 +7,11 @@ const LineChart = () => {
     chart: {
       animations: {
         enabled: false,
-        easing: 'swing'
+        easing: 'linear',
+        speed: 50,
+      },
+      animateGradually: {
+        enabled: false,
       },
       background: '',
       foreColor: '#333',
@@ -15,9 +19,19 @@ const LineChart = () => {
       id: 'WzDd9',
       stackOnlyBar: true,
       toolbar: {
-        show: false
+        offsetX: 9,
+        offsetY: 3,
+        show: true,
+        tools: {
+          download: true,
+          selection: false,
+          zoom: false,
+          zoomin: false,
+          zoomout: false,
+          pan: false,
+          reset: false,
       },
-      width: 1000
+      },
     },
     plotOptions: {
       line: {
@@ -81,15 +95,15 @@ const LineChart = () => {
     grid: {
       padding: {
         right: 5,
-        left: 5,
-        bottom: 10
+        left: 10,
+        bottom: 0
       }
     },
     legend: {
         floating: false,
         position: 'bottom',
         fontSize: 14,
-        offsetX: -2,
+        offsetX: 0,
         offsetY: 0,
         markers: {
           shape: 'square',
@@ -131,6 +145,9 @@ const LineChart = () => {
       labels: {
         style: {}
       },
+      tooltip: {
+        enabled: false
+      },
       group: {
         groups: [],
         style: {
@@ -150,7 +167,7 @@ const LineChart = () => {
       }
     },
     yaxis: {
-      tickAmount: 15,
+      tickAmount: 12,
       max: 270000,
       min: 0,
       labels: {
@@ -159,17 +176,15 @@ const LineChart = () => {
       title: {
         text: 'Liczba studentów',
         style: {
-          fontSize: 12
+          fontSize: 12.5,
+          fontWeight: 700,
         }
       }
-    },
-    markers: {
-      size: 3,
     },
     title: {
       text: '2. Liczba studentów z podziałem na kierunki studiów w latach 2018-2022',
       floating: true,
-      offsetY: 0,
+      offsetY: -8,
       align: 'center',
       style: {
         color: '#444'
@@ -324,8 +339,8 @@ const LineChart = () => {
 ];
 
   return (
-    <div>
-      <Chart options={options} series={series} type="line" height={600} width={500} />
+    <div className="line-chart">
+      <Chart options={options} series={series} type="line" height={600} width={600} />
     </div>
   );
 };

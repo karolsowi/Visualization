@@ -73,7 +73,7 @@ nav .opis-button:hover {
 }
 
 body {
-  padding-top: 8rem; /* Adjust this value as needed */
+  padding-top: 6.5rem; /* Adjust this value as needed */
 }
 
 
@@ -85,5 +85,52 @@ body {
 .chart-container {
   padding: 5rem;
   margin-bottom: auto;
-  
+}
+
+.year-selector {
+  margin-top: 50px;
+  width: 132px;
+  position: relative;
+  left: 458px;
+  display: flex;
+  background-color: #e4e4e4;
+  border-radius: 7px;
+  align-items: center;
+}
+
+.arrow-button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+}
+
+.arrow-button-right {
+  position: absolute;
+  left: 90px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+}
+
+.year-display {
+  display: inline;
+  font-size: 18px;
+  left: 80px;
+  align-items: center;
+  text-align: center;
+}
+
+.line-chart {
+  position: absolute;
+  left: 155px;
+}
+
+.bar-chart {
+  position: absolute;
+  left: 780px;
+  margin-bottom: 20px;
 }

@@ -17,6 +17,7 @@ function Home() {
       <div className="chart-wide">
         <MultiChart />
         <br/>
+        <br/>
       </div>
       <div className="wrapper">
         <LineChart />

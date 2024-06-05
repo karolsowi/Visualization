@@ -2,13 +2,12 @@ import React from 'react';
 import Chart from 'react-apexcharts';
 
 const data = {
-    2018:	[34.53,	11.49,	28.22,	26.21,	29.06,	26.12,	24.17,	31.03,	20.44,	31.56,	23.93],
-    2019:	[34.45,	3.17,	27.71,	26.91,	29.69,	26.63,	23.42,	31.36,	22.42,	31.56,	25.51],
-    2020:	[33.64,	17.91,	26.91,	24.49,	28.60,	24.01,	22.08,	27.26,	20.18,	29.69,	21.16],
-    2021:	[35.11,	21.46,	27.92,	25.31,	28.88,	23.80,	23.64,	27.87,	22.04,	30.16,	21.40],
-    2022:	[28.19,	18.37,	26.99,	23.99,	28.21,	25.72,	23.16,	27.97,	21.98,	30.06,	22.21]
+    2018: [34.53, 11.49, 28.22, 26.21, 29.06, 26.12, 24.17, 31.03, 20.44, 31.56, 23.93],
+    2019: [34.45, 3.17, 27.71, 26.91, 29.69, 26.63, 23.42, 31.36, 22.42, 31.56, 25.51],
+    2020: [33.64, 17.91, 26.91, 24.49, 28.60, 24.01, 22.08, 27.26, 20.18, 29.69, 21.16],
+    2021: [35.11, 21.46, 27.92, 25.31, 28.88, 23.80, 23.64, 27.87, 22.04, 30.16, 21.40],
+    2022: [28.19, 18.37, 26.99, 23.99, 28.21, 25.72, 23.16, 27.97, 21.98, 30.06, 22.21]
 };
-
 
 const series = Object.keys(data).map(year => ({
   name: year,
@@ -20,7 +19,22 @@ const options = {
     type: 'bar',
     height: 350,
     stacked: false,
+    offsetX: -10,
+    animations: {
+      enabled: true,
+      easing: 'easeinout',
+      speed: 300,
+      animateGradually: {
+        enabled: false,
+        delay: 150
+      },
+      dynamicAnimation: {
+        enabled: false,
+        
+      }
+    },
   },
+  colors: ['#56b5e8', '#009f72', '#dbcf1f', '#ec8fc1', '#e46402'], // Assigning different colors to each year
   plotOptions: {
     bar: {
       dataLabels: {
@@ -35,17 +49,19 @@ const options = {
     },
     offsetY: -20,
     style: {
-      fontSize: '8px',
+      fontSize: '9px',
       colors: ["#304758"]
     }
   },
   xaxis: {
-    categories: ['edukacja',	'indywidualne studia międzyobszarowe',	'nauki przyrodnicze, matematyka i statystyka',	'nauki społeczne, dziennikarstwo i informacja',	'prowadzenie działalności gospodarczej, administracja i prawo',	'rolnictwo, leśnictwo, rybołówstwo i weterynaria',	'sztuka i przedmioty humanistyczne',	'technika, przemysł i budownictwo',	'technologie informacyjno-komunikacyjne',	'usługi',	'zdrowie i opieka społeczna',
-],
+    categories: ['edukacja', 'indywidualne studia międzyobszarowe', 'nauki przyrodnicze, matematyka i statystyka', 'nauki społeczne, dziennikarstwo i informacja', 'prowadzenie działalności gospodarczej, administracja i prawo', 'rolnictwo, leśnictwo, rybołówstwo i weterynaria', 'sztuka i przedmioty humanistyczne', 'technika, przemysł i budownictwo', 'technologie informacyjno-komunikacyjne', 'usługi', 'zdrowie i opieka społeczna'],
     position: 'under',
     labels: {
-      rotate: -35,
-      offsetY: 5,
+      rotate: -31,
+      offsetY: 3,
+      style: {
+        fontSize: '12.5px',
+      },
     },
     axisBorder: {
       show: false
@@ -66,7 +82,7 @@ const options = {
       }
     },
     tooltip: {
-      enabled: true,
+      enabled: false,
     }
   },
   fill: {
@@ -89,17 +105,26 @@ const options = {
       show: true,
     },
     labels: {
-      
       show: true,
       formatter: function (val) {
         return val;
+      },
+      style: {
+        fontSize: '12px',
+      }
+    },
+    title: {
+      text: '% Absolwentów',
+      style: {
+        fontSize: 13,
+        fontWeight: 700,
       }
     }
   },
   title: {
-    text: '1. Liczba Absolwentów z Podziałem na Kierunki Studiów w Latach 2018-2022',
+    text: '1. % Absolwentów z podziałem na kierunki studiów w latach 2018-2022',
     floating: true,
-    offsetY: 0,
+    offsetY: -12,
     align: 'center',
     style: {
       color: '#444'
