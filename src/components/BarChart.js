@@ -173,6 +173,15 @@ const BarChart = () => {
           fontSize: 12
         }
       }
+    },
+    title: {
+      text: '3. Średnia liczba studentów z podziałem na płeć i kierunek studiów w latach 2018-2022',
+      floating: true,
+      offsetY: 0,
+      align: 'center',
+      style: {
+        color: '#444'
+      }
     }
   };
 

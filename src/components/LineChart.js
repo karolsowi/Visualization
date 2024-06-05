@@ -15,7 +15,7 @@ const LineChart = () => {
       id: 'WzDd9',
       stackOnlyBar: true,
       toolbar: {
-        show: true
+        show: false
       },
       width: 1000
     },
@@ -127,7 +127,7 @@ const LineChart = () => {
       hideEmptySeries: false
     },
     xaxis: {
-      type: 'numeric',
+      type: 'category',
       labels: {
         style: {}
       },
@@ -140,7 +140,8 @@ const LineChart = () => {
           cssClass: ''
         }
       },
-      tickAmount: 2,
+      tickAmount: 3,
+      tickPlacement: 'on',
       title: {
         text: 'Rok',
         style: {
@@ -160,6 +161,18 @@ const LineChart = () => {
         style: {
           fontSize: 12
         }
+      }
+    },
+    markers: {
+      size: 3,
+    },
+    title: {
+      text: '2. Liczba studentów z podziałem na kierunki studiów w latach 2018-2022',
+      floating: true,
+      offsetY: 0,
+      align: 'center',
+      style: {
+        color: '#444'
       }
     }
   };
