@@ -398,12 +398,12 @@ const BarChart = () => {
     if (selectedYear === 'Suma') {
       newOptions.yaxis = {
         ...baseOptions.yaxis,
-        max: 150000
+        max: 600000
       };
     } else {
       newOptions.yaxis = {
         ...baseOptions.yaxis,
-        max: 30000 // Default max value for individual years
+        max: 132000 // Default max value for individual years
       };
     }
     setChartOptions(newOptions);

@@ -168,7 +168,7 @@ const LineChart = () => {
     },
     yaxis: {
       tickAmount: 12,
-      max: 270000,
+      max: 210000,
       min: 0,
       labels: {
 
