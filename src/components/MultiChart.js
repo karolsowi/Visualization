@@ -24,7 +24,7 @@ const options = {
   plotOptions: {
     bar: {
       dataLabels: {
-        position: 'top', // top, center, bottom
+        position: 'top',
       },
     }
   },
@@ -44,6 +44,7 @@ const options = {
 ],
     position: 'under',
     labels: {
+      rotate: -35,
       offsetY: 5,
     },
     axisBorder: {
@@ -88,6 +89,7 @@ const options = {
       show: true,
     },
     labels: {
+      
       show: true,
       formatter: function (val) {
         return val;
@@ -102,7 +104,21 @@ const options = {
     style: {
       color: '#444'
     }
-  }
+  },
+  legend: {
+    floating: true,
+    position: 'top',
+    fontSize: 14,
+    offsetX: 0,
+    offsetY: 37,
+    markers: {
+      shape: 'square',
+      size: 8
+    },
+    itemMargin: {
+      vertical: 0
+    }
+  },
 };
 
 const MultiChart = () => {

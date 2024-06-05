@@ -81,7 +81,8 @@ const LineChart = () => {
     grid: {
       padding: {
         right: 5,
-        left: 5
+        left: 5,
+        bottom: 10
       }
     },
     legend: {
@@ -89,13 +90,13 @@ const LineChart = () => {
         position: 'bottom',
         fontSize: 14,
         offsetX: -2,
-        offsetY: 10,
+        offsetY: 0,
         markers: {
           shape: 'square',
           size: 10
         },
         itemMargin: {
-          vertical: 1
+          vertical: 3.5
         }
       },
     markers: {
@@ -152,9 +153,7 @@ const LineChart = () => {
       max: 270000,
       min: 0,
       labels: {
-        style: {
-          colors: [null, null, null, null, null, null, null, null, null, null, null, null]
-        }
+
       },
       title: {
         text: 'Liczba studentów',
@@ -176,7 +175,8 @@ const LineChart = () => {
             { x: '2022', y: '53114' }
         ],
         group: 'apexcharts-axis-0',
-        zIndex: 0
+        zIndex: 0,
+        color: '#000000' 
     },
     {
         name: 'indywidualne studia międzyobszarowe',
@@ -188,7 +188,8 @@ const LineChart = () => {
             { x: '2022', y: '17905' }
         ],
         group: 'apexcharts-axis-0',
-        zIndex: 1
+        zIndex: 1,
+        color: '#e79f01'
     },
     {
         name: 'nauki przyrodnicze, matematyka i statystyka',
@@ -200,7 +201,8 @@ const LineChart = () => {
             { x: '2022', y: '51443' }
         ],
         group: 'apexcharts-axis-0',
-        zIndex: 2
+        zIndex: 2,
+        color: "#56b5e8"
     },
     {
         name: 'nauki społeczne, dziennikarstwo i informacja',
@@ -212,7 +214,8 @@ const LineChart = () => {
             { x: '2022', y: '115475' }
         ],
         group: 'apexcharts-axis-0',
-        zIndex: 3
+        zIndex: 3,
+        color: "#009f72"
     },
     {
         name: 'prowadzenie działalności gospodarczej, administracja i prawo',
@@ -224,7 +227,8 @@ const LineChart = () => {
             { x: '2022', y: '179073' }
         ],
         group: 'apexcharts-axis-0',
-        zIndex: 4
+        zIndex: 4,
+        color: "#c4b819"
     },
     {
         name: 'rolnictwo, leśnictwo, rybołówstwo i weterynaria',
@@ -236,7 +240,8 @@ const LineChart = () => {
             { x: '2022', y: '25645' }
         ],
         group: 'apexcharts-axis-0',
-        zIndex: 5
+        zIndex: 5,
+        color: "#0073b3"
     },
     {
         name: 'sztuka i przedmioty humanistyczne',
@@ -248,7 +253,8 @@ const LineChart = () => {
             { x: '2022', y: '110255' }
         ],
         group: 'apexcharts-axis-0',
-        zIndex: 6
+        zIndex: 6,
+        color: "#d45e01"
     },
     {
         name: 'technika, przemysł i budownictwo',
@@ -260,7 +266,8 @@ const LineChart = () => {
             { x: '2022', y: '196214' }
         ],
         group: 'apexcharts-axis-0',
-        zIndex: 7
+        zIndex: 7,
+        color: "#cd79a6"
     },
     {
         name: 'technologie informacyjno-komunikacyjne',
@@ -272,7 +279,8 @@ const LineChart = () => {
             { x: '2022', y: '62454' }
         ],
         group: 'apexcharts-axis-0',
-        zIndex: 8
+        zIndex: 8,
+        color: "#999999"
     },
     {
         name: 'usługi',
@@ -284,8 +292,22 @@ const LineChart = () => {
             { x: '2022', y: '57534' }
         ],
         group: 'apexcharts-axis-0',
-        zIndex: 9
-    }
+        zIndex: 9,
+        color: "#146a2e"
+    },
+    {
+      name: 'zdrowie i opieka społeczna',
+      data: [
+          { x: '2018', y: '72393' },
+          { x: '2019', y: '67567' },
+          { x: '2020', y: '63558' },
+          { x: '2021', y: '59190' },
+          { x: '2022', y: '57534' }
+      ],
+      group: 'apexcharts-axis-0',
+      zIndex: 10,
+      color: "#b001ff"
+  }
 ];
 
   return (

@@ -1,10 +1,8 @@
 import React from 'react';
 import './App.css';
 import BarChart from './components/BarChart';
-import { MixChart } from './components/MixChart';
 import { Container } from 'reactstrap';
 import LineChart from './components/LineChart';
-import CandlestickChart from './components/CandleChart';
 import MultiChart from './components/MultiChart';
 import { Routes, Route, Link } from 'react-router-dom';
 import Opis from './components/opis';
