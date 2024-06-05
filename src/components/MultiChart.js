@@ -57,10 +57,14 @@ const options = {
     categories: ['edukacja', 'indywidualne studia międzyobszarowe', 'nauki przyrodnicze, matematyka i statystyka', 'nauki społeczne, dziennikarstwo i informacja', 'prowadzenie działalności gospodarczej, administracja i prawo', 'rolnictwo, leśnictwo, rybołówstwo i weterynaria', 'sztuka i przedmioty humanistyczne', 'technika, przemysł i budownictwo', 'technologie informacyjno-komunikacyjne', 'usługi', 'zdrowie i opieka społeczna'],
     position: 'under',
     labels: {
+      rotateAlways: true,
+      show: true,
+      hideOverlappingLabels: false,
       rotate: -31,
       offsetY: 3,
       style: {
         fontSize: '12.5px',
+        fontWeight: 500,
       },
     },
     axisBorder: {

@@ -308,7 +308,8 @@ const baseOptions = {
   },
   xaxis: {
     labels: {
-      rotateAlways: false,
+      rotateAlways: true,
+      hideOverlappingLabels: false,
       rotate: -40,
       trim: false,
       style: {
