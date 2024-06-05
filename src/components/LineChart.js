@@ -1,6 +1,6 @@
 import React from 'react';
 import Chart from 'react-apexcharts';
-
+import './../App.css';
 const LineChart = () => {
   const options = {
     annotations: {},

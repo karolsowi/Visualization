@@ -1,5 +1,6 @@
 import React from 'react';
 import Chart from 'react-apexcharts';
+import './../App.css';
 
 const data = {
     2018: [34.53, 11.49, 28.22, 26.21, 29.06, 26.12, 24.17, 31.03, 20.44, 31.56, 23.93],
@@ -60,7 +61,7 @@ const options = {
       rotateAlways: true,
       show: true,
       hideOverlappingLabels: false,
-      rotate: -31,
+      rotate: -27,
       offsetY: 3,
       style: {
         fontSize: '12.5px',

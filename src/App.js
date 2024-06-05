@@ -9,7 +9,7 @@ import Opis from './components/opis';
 
 function Home() {
   return (
-    <div>
+    <div className='main-window'>
       <nav>
         <h1>Wizualizacja Danych</h1>
         <Link to="/opis" className="opis-button">Opis</Link>

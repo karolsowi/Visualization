@@ -1,3 +1,9 @@
+body, html {
+  min-width: 1200px; /* Set a fixed minimum width for the body */
+  min-height: 800px; /* Set a fixed minimum height for the body */
+  overflow: auto; /* Enable scrolling if the content overflows */
+}
+
 .App {
   text-align: center;
   background-color: #f8f9fa;
@@ -24,6 +30,9 @@
 }
 
 .chart-wide {
+  position: absolute;
+  left: 302px;
+  width: 1300px;
   margin-bottom: 25px;
 }
 
@@ -40,16 +49,18 @@
 nav {
   background-color: #3273ff;
   padding: 1rem;
-  padding-inline: 18rem;
+  padding-inline: 15rem;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: space-between;
   color: rgb(255, 255, 255);
   position: absolute;
   top: 0;
   left: 0;
+  min-width: 1800px;
   width: 100%;
   z-index: 1000; /* Ensures it stays on top of other elements */
+  text-wrap: nowrap;
 }
 
 nav h1 {
@@ -126,11 +137,13 @@ body {
 
 .line-chart {
   position: absolute;
+  top: 570px;
   left: 155px;
 }
 
 .bar-chart {
   position: absolute;
   left: 780px;
+  top: 570px;
   margin-bottom: 20px;
 }
