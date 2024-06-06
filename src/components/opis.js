@@ -14,12 +14,24 @@ const Opis = () => {
         <p>Jest to projekt stworzony w ramach zajęć Wizualizacja danych w Szkole Głównej Gospodarstwa Wiejskiego w Warszawie dla kierunku Informatyka.</p>
         <p>Projekt przedstawia dane na temat liczby studentów oraz absolwentów różnych kierunków studiów na uczelniach wyższych w Polsce na przestrzeni lat 2018-2022.</p>
         <p>Dane wykorzystane w projekcie zostały pobrane z Banku Danych Lokalnych prowadzonego przez Główny Urząd Statystyczny.</p>
+        <p>Przekrój:  Polska; grupa kierunków kształcenia wg ISCED-F 2013; podgrupa kierunków kształcenia wg ISCED-F 2013;<br/><br/>
+
+Definicje pojęć:  Student - osoba kształcąca się na studiach pierwszego lub drugiego stopnia albo jednolitych studiach magisterskich.<br/>
+
+Absolwent studiów otrzymuje dyplom ukończenia studiów na określonym kierunku i profilu potwierdzający wykształcenie wyższe oraz tytuł zawodowy:<br/>
+
+licencjata, inżyniera albo równorzędny potwierdzający wykształcenie wyższe na tym samym poziomie – w przypadku studiów pierwszego stopnia;<br/>
+magistra, magistra inżyniera albo równorzędny potwierdzający wykształcenie wyższe na tym samym poziomie – w przypadku studiów drugiego stopnia i jednolitych studiów magisterskich.<br/>
+
+Wyjaśnienia metodologiczne:  Łącznie z cudzoziemcami<br/><br/>
+
+Źródło danych: Zestawy danych z systemów informacyjnych Ministerstwa Edukacji i Nauki; opracowanie wyników badań - Główny Urząd Statystyczny; Urząd Statystyczny w Gdańsku</p><br/>
         <p>Do wszystkich wykresów została wykorzystana paleta kolorów stworzona na podstawie palety Okabe-Ito, która została specjalnie skomponowana z myślą o osobach z różnymi formami daltonizmu.</p>
         <h2>Cel projektu</h2>
         <p>Celem projektu jest zbadanie trendów w wyborze kierunków studiów na przestrzeni lat, takich jak które kierunki studiów zyskały na popularności, a które straciły.</p>
         <h2>Opisy wykresów</h2>
         <h3>1. Liczba absolwentów z podziałem na kierunki studiów w latach 2018-2022</h3>
-        <p></p>
+        <p> Na wykresie przedstawiony jest stosunek absolwentów do studentów w danym roku. Patrząc na zakres 5-letni, możemy zauważyć jaka część studentów kończy swój kierunek, biorąc jednocześnie pod uwagę, że dane czy ktoś został absolwentem nie odnoszą się do tych samych studentów, lecz sumy z danego roku.</p>
         <h3>2. Liczba studentów z podziałem na kierunki studiów w latach 2018-2022</h3>
         <p>Wykres pokazuje różnice w ilości studentów na poszczególnych kierunkach studiów oraz ich zmiany na przestrzeni lat. Można m.in. zauważyć, że najpopularniejszą grupą kierunków jest technika, przemysł i budownictwo, ale z biegiem lat ilość studentów na tych kierunkach stopniowo spada.</p>
         <h3>3. Średnia liczba studentów zpodziałem na płeć i kierunek studiów w latach 2018-2022</h3>
