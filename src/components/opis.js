@@ -12,6 +12,7 @@ const Opis = () => {
       <div className="opis">
         <h1>Opis projektu</h1>
         <p>Jest to projekt stworzony w ramach zajęć Wizualizacja danych w Szkole Głównej Gospodarstwa Wiejskiego w Warszawie dla kierunku Informatyka. Projekt przedstawia dane na temat liczby studentów oraz absolwentów różnych kierunków studiów na uczelniach wyższych w Polsce na przestrzeni lat 2018-2022. Dane wykorzystane w projekcie zostały pobrane z Banku Danych Lokalnych prowadzonego przez Główny Urząd Statystyczny.</p>
+        <p><strong>Autorzy</strong>: Karol Sowiński, Sara Stec</p>
         
         <h3>Przekrój</h3>
         <p>Polska; grupa kierunków kształcenia wg ISCED-F 2013; podgrupa kierunków kształcenia wg ISCED-F 2013.</p>
