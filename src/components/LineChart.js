@@ -114,8 +114,9 @@ const LineChart = () => {
         }
       },
     markers: {
+      size: 3,
       hover: {
-        size: 0,
+        size: 1,
         sizeOffset: 6
       }
     },
@@ -138,7 +139,9 @@ const LineChart = () => {
       }
     },
     tooltip: {
-      hideEmptySeries: false
+      enabled: true,
+      hideEmptySeries: false,
+      shared: false,
     },
     xaxis: {
       type: 'category',
@@ -167,8 +170,8 @@ const LineChart = () => {
       }
     },
     yaxis: {
-      tickAmount: 12,
-      max: 210000,
+      tickAmount: 10,
+      max: 200000,
       min: 0,
       labels: {
 
@@ -179,7 +182,7 @@ const LineChart = () => {
           fontSize: 12.5,
           fontWeight: 700,
         }
-      }
+      },
     },
     title: {
       text: '2. Liczba studentów z podziałem na kierunki studiów w latach 2018-2022',
