@@ -3,7 +3,22 @@ body, html {
   min-height: 800px; /* Set a fixed minimum height for the body */
   overflow: auto; /* Enable scrolling if the content overflows */
 }
-
+.opis {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+.opis h2, .opis h3 {
+  color: #333;
+  font-size: 14pt;
+}
+.opis p {
+  line-height: 1.6;
+  color: #666;
+}
 .App {
   text-align: center;
   background-color: #f8f9fa;
